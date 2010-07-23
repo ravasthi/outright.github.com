@@ -1,0 +1,6 @@
+markdown: rdiscount
+pygments: true
+server: true
+server_port: 4000
+paginate:    15
+permalink: "/:categories/:title"
