@@ -1,5 +1,5 @@
 body {
-  background: #ccc; }
+  background: #fff; }
 
 h1 {
   font-size: 35px; }
@@ -10,5 +10,40 @@ h1 {
   padding-left: 5px;
   font-size: 10px; }
 
+.header {
+  margin-top: 20px;
+} 
+.header-logo {
+  height: 64px;
+  width: 64px;
+  margin-right: 4px;
+  background: url("/images/or_mark_64x64.png")no-repeat;
+  float: left;
+}  
+.header-content {
+  background: #9dd53a; /* Old browsers */
+  background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 17%, #7cbc0a 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(17%,#a1d54f), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 17%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #9dd53a 0%,#a1d54f 17%,#7cbc0a 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 17%,#7cbc0a 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #9dd53a 0%,#a1d54f 17%,#7cbc0a 100%); /* W3C */
+  overflow: hidden;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0px 10px;
+} 
+
+.header-content h1 {
+  color: #213502;
+  text-shadow: 1px 1px 1px #c0e782;
+  font-family: 'Rosario', sans-serif;
+  font-weight: normal;
+  margin: 6px 0px;
+} 
+
 .content {
-  background: #fff;}
+  background: #fff;
+  margin-top: 40px;}
