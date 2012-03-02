@@ -1,6 +1,6 @@
 ---
 title: "Compiling REE on Mac OS 10.7 /ext/purelib.rb:2: BUG Segmentation fault"
-author: Trae Robrock <trae@outright.com>
+author: trobrock
 layout: post
 ---
 

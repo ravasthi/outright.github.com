@@ -1,6 +1,27 @@
 markdown: rdiscount
 pygments: true
+exclude: [README.md, CNAME, Gemfile, Gemfile.lock]
+paginate: 15
+permalink: "/:title"
+
+base_url: "http://engineering.outright.com"
+email: code@outright.com
+
+authors:
+  bcurren:
+    display_name: Ben Curren
+    email: ben@outright.com
+    web: http://jotthought.com
+    twitter: bcurren
+    github: bcurren
+  trobrock:
+    display_name: Trae Robrock
+    email: trae@outright.com
+    web: http://trobrock.com
+    twitter: trobrock
+    github: trobrock
+
+# Local server
+auto: true
 server: true
 server_port: 4000
-paginate:    15
-permalink: "/:categories/:title"
