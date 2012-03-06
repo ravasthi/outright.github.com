@@ -7,15 +7,20 @@ permalink: "/:title"
 base_url: "http://engineering.outright.com"
 email: code@outright.com
 
+disqus_shortname: outrightcom
+ga_code: UA-XXXXX-X
+
 authors:
   bcurren:
     display_name: Ben Curren
+    gravatar: 7530e528c21181f8e893ec445f15a199
     email: ben@outright.com
     web: http://jotthought.com
     twitter: bcurren
     github: bcurren
   trobrock:
     display_name: Trae Robrock
+    gravatar: 71c3bbda60a46a241bf9a2d68e41cbec
     email: trae@outright.com
     web: http://trobrock.com
     twitter: trobrock
@@ -25,3 +30,10 @@ authors:
 auto: true
 server: true
 server_port: 4000
+
+# # Calculate gravatar hash from email address
+# def calc_gravatar(email)
+#   require 'digest/md5'
+#   Digest::MD5.hexdigest(email.downcase.strip)
+# end
+# calc_gravatar("ben@outright.com")
