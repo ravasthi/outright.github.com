@@ -7,7 +7,11 @@ permalink: "/:title"
 base_url: "http://engineering.outright.com"
 email: code@outright.com
 
-disqus_shortname: outrightcom
+facebook_appid: 167848943333883
+facebook_num_posts: 5
+facebook_width: 580
+facebook_colorscheme: light
+
 ga_code: UA-XXXXX-X
 
 authors:
