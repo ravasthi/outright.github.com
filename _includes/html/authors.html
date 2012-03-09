@@ -1,0 +1,11 @@
+<ul>
+{% for author_id in site.author_ids %}
+  {% assign author = site.authors[author_id] %}
+  <li>
+    <a class="twitter" href="https://twitter.com/#!/{{ author.twitter }}" title="Follow {{ page.author | capitalize }} on Twitter">Twitter</a>
+    <a class="github" href="https://github.com/{{ author.github }}" title="Follow {{ page.author | capitalize }}'s code on GitHub">GitHub</a>
+    <img class="avatar" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="40" height="40">
+    <span class="author">{{ author.display_name }}</span>
+  </li>
+{% endfor %}
+</ul>
