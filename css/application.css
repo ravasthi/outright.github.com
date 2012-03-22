@@ -42,9 +42,27 @@ body {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px dotted #ccc;
+  position: relative;
 }
 .posts li:last-child {
   border-bottom: none;
+}
+
+.arrow-left {
+  width:0px; 
+  height:0px; 
+  border-bottom:5px solid transparent;  /* left arrow slant */
+  border-top:5px solid transparent; /* right arrow slant */
+  border-right:5px solid #2f2f2f; /* bottom, add background color here */
+  font-size:0px;
+  line-height:0px;
+  position: absolute;
+  top: 40px;
+}
+
+article.post {
+  width: 550px;
+  margin: 0px auto;
 }
 
 footer {
@@ -58,3 +76,7 @@ footer {
   color: #666;
 }
 
+.share ul li {
+  list-style-type: none;
+  display: inline;
+}

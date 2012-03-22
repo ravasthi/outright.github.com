@@ -23,7 +23,8 @@ title: Latest Articles
             <a class="comments" href="{{ post.url }}#comments_thread"><fb:comments-count href="{{ site.base_url }}{{ post.url }}"></fb:comments-count> Comments</a>
           </p>
         </div>
-        <div class="span8">
+        <div class="span8 well">
+          <div class="arrow-left">&nbsp;</div>
           <h2><a class="title" href="{{ post.url }}">{{ post.title }}</a></h2>
           <p>{{ post.content | truncatehtml: 200 }}</p>
         </div>
