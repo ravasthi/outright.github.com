@@ -80,3 +80,7 @@ footer {
   list-style-type: none;
   display: inline;
 }
+
+p{
+  line-height: 24px;
+}
