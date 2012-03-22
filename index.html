@@ -4,16 +4,16 @@ title: Latest Articles
 ---
 
 <div class="hero-unit">
-  <h1>Coding Profit</h1>
-  <p>The team and technology behind <a href="http://outright.com">Outright.com</a>.</p>
+  <h1>The team and technology behind <a href="http://outright.com">Outright.com</a>.</h1>
 </div>
 
 <section class="post-list">
-  <ul class="posts">
+  <div class="span7">
+  <ul class="posts unstyled">
     {% for post in paginator.posts %}
     {% assign author = site.authors[post.author] %}
     <li>
-      <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+      <h2><a class="title" href="{{ post.url }}">{{ post.title }}</a></h2>
       <span class="meta">
         {{ post.date | date_to_string }}
         by <strong>{{ author.display_name }}</strong>
@@ -23,7 +23,7 @@ title: Latest Articles
     </li>
     {% endfor %}
   </ul>
-  
+  </div>
   <div class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
