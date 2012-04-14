@@ -25,18 +25,6 @@
   <link rel="stylesheet" type="text/css" href="/css/application.css">
   <link rel="stylesheet" type="text/css" href="/css/github_badge.css">
   
-  <style type="text/css" media="screen">
-    @media (min-width: 979px) {
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .navbar .brand {
-        background: transparent url(/images/brand.png) no-repeat left center;
-        padding-left: 45px;
-      }
-    }
-  </style>
   
   <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
   
@@ -55,15 +43,10 @@
      chromium.org/developers/how-tos/chrome-frame-getting-started -->
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-<div class="navbar navbar-fixed-top">
+<div class="navbar">
   <div class="navbar-inner">
-    <div class="container-fluid">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <a class="brand" href="/">Outright Engineering</a>
+    <div class="container">
+      <a class="brand" href="/">Coding Profit</a>
       <div class="nav-collapse">
         <ul class="nav">
           <li class="active"><a href="#">Home</a></li>
@@ -75,23 +58,29 @@
   </div>
 </div>
   
-<div class="container-fluid">
+<div class="container">
   <div class="row-fluid">
-    <div class="span9">
+    <div class="span7">
 
       {{ content }}
 
     </div>
     <div class="span3">
       
-      {% include html/authors.html %}
+      <!-- {% include html/authors.html %} -->
       
     </div>
   </div>
 </div>
 
 <footer>
-  &copy; 2008-2012 Outright, Inc
+  <div class="container">
+    <div class="copyright row-fluid">
+      <div class="span12">
+      &copy; 2008-2012 Outright, Inc
+      </div>
+    </div>
+  </div>
 </footer>
 
 <!-- JavaScript at the bottom for fast page loading -->
