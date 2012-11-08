@@ -6,6 +6,7 @@ gem "RedCloth"
 gem "less"
 gem "therubyracer"
 gem "nokogiri"
+gem "stringex"
 
 # compass
 gem "compass", ">= 0.12"

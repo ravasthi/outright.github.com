@@ -64,6 +64,7 @@ GEM
       compass (>= 0.12.2)
       sass (>= 3.2.0)
     slop (3.3.3)
+    stringex (1.4.0)
     syntax (1.0.0)
     therubyracer (0.10.2)
       libv8 (~> 3.3.10)
@@ -85,5 +86,6 @@ DEPENDENCIES
   rdiscount
   sass
   sassy-buttons
+  stringex
   therubyracer
   vendorer

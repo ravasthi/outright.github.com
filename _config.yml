@@ -37,7 +37,7 @@ server: true
 server_port: 4000
 
 # Excludes
-exclude: styles/, Gemfile, Gemfile.lock, Guardfile, Vendorfile
+exclude: bin, styles, Gemfile, Gemfile.lock, Guardfile, Vendorfile
 
 # # Calculate gravatar hash from email address
 # def calc_gravatar(email)
