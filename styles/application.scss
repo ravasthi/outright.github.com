@@ -28,13 +28,9 @@
 @import "foundation";
 @import "page";
 @import "forms";
-@import "alerts";
-@import "pagination";
 @import "header";
 @import "footer";
+@import "pagination";
 
 // Feature-/page-specific
-@import "documentation";
-@import "login";
-@import "style-guide";
-@import "feature-1";
+@import "post";

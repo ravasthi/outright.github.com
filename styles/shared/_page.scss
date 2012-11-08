@@ -3,6 +3,19 @@
 */
 #page
 {
+  padding: $body-text-line-height $column-width;
+
+  @media (min-width: 500px)
+  {
+    margin: $body-text-line-height $gutter-width;
+  }
+
+  @media (min-width: 768px)
+  {
+    margin: $section-spacing auto;
+    max-width: $max-page-width;
+  }
+
   .annotation,
   .fine-print,
   .form-help
@@ -26,5 +39,24 @@
   .subheading
   {
     font-weight: bold;
+  }
+
+  #content-container
+  {
+    @include clearfix;
+  }
+
+  #content
+  {
+    @media (min-width: 480px)
+    {
+      max-width: $max-content-width;
+    }
+
+    @media (min-width: 768px)
+    {
+      float: left;
+      margin-right: $gutter-width;
+    }
   }
 }

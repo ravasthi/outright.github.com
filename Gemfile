@@ -4,6 +4,7 @@ gem "jekyll"
 gem "rdiscount"
 gem "RedCloth"
 gem "less"
+gem "therubyracer"
 gem "nokogiri"
 
 # compass

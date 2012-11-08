@@ -36,6 +36,9 @@ auto: true
 server: true
 server_port: 4000
 
+# Excludes
+exclude: styles/
+
 # # Calculate gravatar hash from email address
 # def calc_gravatar(email)
 #   require 'digest/md5'

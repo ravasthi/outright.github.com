@@ -2,10 +2,14 @@
 | Style specifying the dimensions of the basic page grid and other common
 | measures.
 */
-$column-width     : 20px;
-$horizontal-nudge : $column-width / 4;
+$column-width      : 20px;
+$horizontal-nudge  : $column-width / 4;
 
-$gutter-width     : 1.5 * $column-width;
+$gutter-width      : 1.5 * $column-width;
 
-$vertical-nudge   : $body-text-line-height / 4;
-$section-spacing  : 2 * $body-text-line-height;
+$vertical-nudge    : $body-text-line-height / 4;
+$section-spacing   : 2 * $body-text-line-height;
+
+$max-content-width : 33 * $body-text-size;
+$sidebar-width     : 15 * $body-text-size;
+$max-page-width    : $max-content-width + $gutter-width + $sidebar-width;
