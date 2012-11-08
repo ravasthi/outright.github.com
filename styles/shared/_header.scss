@@ -3,9 +3,31 @@
 */
 header.global
 {
+  margin: 0 0 $body-text-line-height;
+
+  .branding
+  {
+    display: inline-block;
+    margin-right: $column-width;
+    width: 87px;
+    height: $body-text-line-height;
+    background: image-url("logo.png") no-repeat left middle;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2)
+    {
+      background-image: image-url("logo@2x.png");
+      @include background-size(87px $body-text-line-height);
+    }
+  }
+
+  nav, nav ul
+  {
+    display: inline-block;
+  }
+
   nav ul
   {
-    margin: 0 0 $body-text-line-height;
+    margin: 0;
     list-style: none;
 
     li
