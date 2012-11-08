@@ -1,0 +1,19 @@
+/*-----[ typography ]-----------------------------------------------------------
+*/
+$body-text-family              : Candara, "DejaVu Sans", "Bitstream Vera Sans", Tahoma, "Trebuchet MS", sans-serif;
+$monospace-text-family         : Consolas, Monaco, "Lucida Console", monospace;
+
+$body-text-size                : 16px;
+$body-text-line-height         : 22px;
+
+$secondary-text-size           : 14px;
+$secondary-text-line-height    : 18px;
+
+$small-text-size               : 12px;
+$small-text-line-height        : $secondary-text-line-height;
+
+$page-heading-text-size        : 24px;
+$page-heading-text-line-height : 30px;
+
+$subheading-text-size          : 18px;
+$subheading-text-line-height   : $body-text-line-height;
