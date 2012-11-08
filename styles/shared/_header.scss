@@ -35,5 +35,20 @@ header.global
       display: inline-block;
       margin-right: $column-width;
     }
+
+    li.active a
+    {
+      color: $body-text-color;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+
+      &:visited, &:hover, &:active
+      {
+        color: $body-text-color;
+        text-decoration: none;
+      }
+    }
+
   }
 }
