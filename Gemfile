@@ -20,4 +20,3 @@ gem 'guard-livereload'
 # vendored assets
 gem "vendorer"
 
-
