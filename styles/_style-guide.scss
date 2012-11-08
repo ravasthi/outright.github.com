@@ -1,0 +1,277 @@
+/*-----[ style guide ]----------------------------------------------------------
+*/
+#style-guide
+{
+  #page
+  {
+    padding: $body-text-line-height $column-width;
+  }
+
+  #examples
+  {
+    & > section
+    {
+      margin-top: 2 * $body-text-line-height;
+    }
+
+    & > section > h1
+    {
+      margin-bottom: 2 * $body-text-line-height - ($page-heading-text-size + $vertical-nudge + 0.1);
+      border-bottom: 1px solid $light-stroke;
+      padding-bottom: $vertical-nudge;
+      color: darken($orange, 5);
+    }
+
+    .explanation h2
+    {
+      margin: 0;
+      color: darken($bright-yellow, 10);
+    }
+
+    .explanation p
+    {
+      margin-top: 0;
+    }
+
+    .columns h2
+    {
+      margin-top: $body-text-line-height / 2;
+    }
+
+    .show
+    {
+      $tab-height-inner: $body-text-line-height + 2 * $vertical-nudge;
+      $tab-height: $tab-height-inner + 2px;
+      $tab-width: 125px;
+
+      position: relative;
+      margin-top: $body-text-line-height;
+      padding-top: $tab-height - 1px;
+      overflow: visible;
+
+      &:before
+      {
+        display: inline-block;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        border: 1px solid $light-stroke;
+        padding: $vertical-nudge $column-width / 2;
+        width: $tab-width;
+        background: white;
+        font-family: $body-text-family;
+        font-weight: bold;
+      }
+
+      &.haml:before
+      {
+        content: 'Source in Haml';
+      }
+
+      &.html:before
+      {
+        content: 'Source in HTML';
+      }
+
+      .show-code
+      {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: $tab-width + 1.5 * $column-width;
+        height: $tab-height-inner;
+        line-height: $tab-height-inner;
+      }
+
+      pre
+      {
+        display: none;
+        margin: 0;
+        margin-top: -1px;
+        border: 1px solid $light-stroke;
+      }
+    }
+  }
+
+  .colors
+  {
+    table
+    {
+      margin-top: 0;
+    }
+
+    .swatch
+    {
+      padding: 0;
+      width: 2 * $column-width;
+
+      &.eggplant-purple
+      {
+        background-color: $eggplant-purple;
+      }
+
+      &.teal
+      {
+        background-color: $teal;
+      }
+
+      &.leaf-green
+      {
+        background-color: $leaf-green;
+      }
+
+      &.bright-yellow
+      {
+        background-color: $bright-yellow;
+      }
+
+      &.orange
+      {
+        background-color: $orange;
+      }
+
+      &.blue
+      {
+        background-color: $blue;
+      }
+
+      &.red
+      {
+        background-color: $red;
+      }
+
+      &.charcoal
+      {
+        background-color: $charcoal;
+      }
+
+      &.grey
+      {
+        background-color: $grey;
+      }
+
+      &.silver
+      {
+        background-color: $silver;
+      }
+
+      &.greyish-white
+      {
+        background-color: $greyish-white;
+      }
+    }
+
+    .hex-code
+    {
+      padding-left: $column-width / 2;
+    }
+  }
+
+  .tables
+  {
+    .quantity, .price
+    {
+      text-align: right;
+    }
+
+    table
+    {
+      margin-top: 0;
+    }
+
+    tr.total
+    {
+      font-weight: bold;
+    }
+  }
+
+  .forms
+  {
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=url],
+    select
+    {
+      width: 200px;
+
+      &.large
+      {
+        width: 250px;
+      }
+    }
+  }
+
+  footer
+  {
+    margin-top: $body-text-line-height;
+    font-style: italic;
+    color: $secondary-text-color;
+  }
+}
+
+@media (min-width: 480px)
+{
+  #style-guide
+  {
+    #intro, .explanation, .example
+    {
+      max-width: 600px;
+    }
+  }
+}
+
+@media (min-width: 768px)
+{
+  #style-guide
+  {
+    #examples .columns .column
+    {
+      float: left;
+      margin-right: 2%;
+      width: 32%;
+
+      &:last-of-type
+      {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px)
+{
+  #style-guide #examples
+  {
+    .explanation, .example
+    {
+      float: left;
+      margin-bottom: $body-text-line-height;
+    }
+
+    .explanation
+    {
+      clear: left;
+      margin-right: 3%;
+      width: 32%;
+    }
+
+    .example
+    {
+      width: 65%;
+      max-width: 650px;
+    }
+  }
+}
+
+@media (min-width: 1200px)
+{
+  #style-guide #page
+  {
+    max-width: 1200px;
+  }
+}
+

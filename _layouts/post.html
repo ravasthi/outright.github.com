@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: new
 ---
 {% assign author = site.authors[page.author] %}
 
@@ -9,19 +9,11 @@ layout: default
   </header>
   <div class="content">{{ content }}</div>
   <aside class="meta">
-    <div class="row-fluid">
-      <div class="span1">
-        <img class="avatar  thumbnail" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="40" height="40">
-      </div>
-      <div class="span8">
-        <div class="author">Posted by:<strong>{{ author.display_name }}</strong> on <span class="date">{{ page.date | date_to_long_string }}</span></div>
-        <a class="twitter" href="https://twitter.com/#!/{{ author.twitter }}" title="Follow {{ page.author | capitalize }} on Twitter"><img src="/images/twitter_icon.png"></a>
-        <a class="github" href="https://github.com/{{ author.github }}" title="Follow {{ page.author | capitalize }}'s code on GitHub"><img src="/images/github_icon.png"></a>
-      </div>
-    </div>
+    <p><img class="avatar  thumbnail" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="40" height="40"></p>
+    <div class="byline">Posted by <span class="author">{{ author.display_name }}</span> on <span class="date">{{ page.date | date_to_long_string }}</span></div>
+    <p><a class="twitter" href="https://twitter.com/#!/{{ author.twitter }}" title="Follow {{ page.author | capitalize }} on Twitter"><img src="/images/twitter_icon.png"></a></p>
+    <p><a class="github" href="https://github.com/{{ author.github }}" title="Follow {{ page.author | capitalize }}'s code on GitHub"><img src="/images/github_icon.png"></a></p>
   </aside>
-
-
   <footer>
     <div id="comments_thread"></div>
     <section class="comments">

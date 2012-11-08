@@ -1,38 +1,30 @@
 ---
-layout: default
+layout: new
 title: Latest Articles
 ---
-<div class="hero-unit">
-  <h3>The team and technology behind <a href="http://outright.com">Outright.com</a>.</h3>
-</div>
+<div class="page-header">
+  <h1 class="page-title">Melanie's Contemporary Glass Art</h1>
+  <h2 class="subtitle">The team and technology behind <a href="http://outright.com">Outright.com</a>.</h3>
+</div> <!-- /.page-header -->
 
-
-<section class="post-list">
-  <div class="span8">
-  <ul class="posts unstyled">
+<div id="content">
+  <section class="posts">
     {% for post in paginator.posts %}
     {% assign author = site.authors[post.author] %}
-    <li>
-      <div class="row-fluid">
-        <div class="span3">
-          <p class="meta" style="text-align: right;">
-            <img class="avatar thumbnail" style="display: inline" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="40" height="40">
-            <br />
-            {{ post.date | date_to_string }}<br/>
-            by <strong>{{ author.display_name }}</strong><br />
-            <a class="comments" href="{{ post.url }}#comments_thread"><fb:comments-count href="{{ site.base_url }}{{ post.url }}"></fb:comments-count> Comments</a>
-          </p>
-        </div>
-        <div class="span8 well">
-          <div class="arrow-left">&nbsp;</div>
-          <h2><a class="title" href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p>{{ post.content | truncatehtml: 200 }}</p>
-        </div>
-      </div>
-    </li>
+    <article class="post">
+      <div class="post-content">
+        <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.content | truncatehtml: 200 }}</p>
+      </div> <!-- /.post-content -->
+      <aside class="meta">
+        <p><img class="avatar thumbnail" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="40" height="40"></p>
+        <p class="post-date">{{ post.date | date_to_string }}</p>
+        <p class="byline">by <span class="author">{{ author.display_name }}</span></p>
+        <p><a class="comments" href="{{ post.url }}#comments_thread"><fb:comments-count href="{{ site.base_url }}{{ post.url }}"></fb:comments-count> Comments</a></p>
+      </aside> <!-- /.meta -->
+    </article> <!-- /.post -->
     {% endfor %}
-  </ul>
-  </div>
+  </section> <!-- /.posts -->
   <div class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
@@ -45,4 +37,9 @@ title: Latest Articles
       <a class="next" href="/page{{ paginator.next_page }}#posts">Older Posts &raquo;</a>
     {% endif %}
   </div>
-</section>
+</div> <!-- /#content -->
+<div id="sidebar">
+
+</div> <!-- /#sidebar -->
+
+
