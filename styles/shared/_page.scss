@@ -31,6 +31,22 @@
     @include small-text;
   }
 
+  .share
+  {
+    ul
+    {
+      margin: $body-text-line-height/2 0;
+      list-style: none;
+    }
+
+    li
+    {
+      display: inline-block;
+      margin-right: $horizontal-nudge;
+      vertical-align: middle;
+    }
+  }
+
   .subtitle
   {
     font-weight: normal;

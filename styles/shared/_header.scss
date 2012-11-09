@@ -18,6 +18,12 @@ header.global
       background-image: image-url("logo@2x.png");
       @include background-size(87px $body-text-line-height);
     }
+
+    a
+    {
+      display: block;
+      text-decoration: none;
+    }
   }
 
   nav, nav ul
