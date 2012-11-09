@@ -58,3 +58,16 @@ header.global
 
   }
 }
+
+.page-header
+{
+  .page-title
+  {
+    margin-bottom: $body-text-line-height / 2;
+  }
+
+  .subtitle
+  {
+    margin: 0;
+  }
+}

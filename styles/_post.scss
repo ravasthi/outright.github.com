@@ -5,9 +5,17 @@
 {
   .meta
   {
+    @include clearfix;
+
     p
     {
       margin: 0;
+    }
+
+    .gravatar
+    {
+      float: left;
+      margin-right: $column-width / 2;
     }
   }
 }

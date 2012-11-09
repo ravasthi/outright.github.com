@@ -9,10 +9,14 @@ layout: new
   </header>
   <div class="content">{{ content }}</div>
   <aside class="meta">
-    <p><img class="avatar  thumbnail" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="40" height="40"></p>
+    <div class="gravatar">
+      <img class="avatar  thumbnail" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=44" width="44" height="44"/>
+    </div> <!-- /.gravatar -->
     <div class="byline">Posted by <span class="author">{{ author.display_name }}</span> on <span class="date">{{ page.date | date_to_long_string }}</span></div>
-    <p><a class="twitter" href="https://twitter.com/#!/{{ author.twitter }}" title="Follow {{ page.author | capitalize }} on Twitter"><img src="/images/twitter_icon.png"></a></p>
-    <p><a class="github" href="https://github.com/{{ author.github }}" title="Follow {{ page.author | capitalize }}'s code on GitHub"><img src="/images/github_icon.png"></a></p>
+    <p>
+      <a class="twitter" href="https://twitter.com/#!/{{ author.twitter }}" title="Follow {{ page.author | capitalize }} on Twitter"><img src="/images/twitter_icon.png"></a>
+      <a class="github" href="https://github.com/{{ author.github }}" title="Follow {{ page.author | capitalize }}'s code on GitHub"><img src="/images/github_icon.png"></a>
+    </p>
   </aside>
   <footer>
     <div id="comments_thread"></div>

@@ -1,7 +1,7 @@
 require "bundler/setup"
 require "rack-livereload"
 
-use Rack::LiveReload
+use Rack::LiveReload, :min_delay => 500
 
 # A simple Rack app that serves the site, so we can use POW against it.
 # Taken from http://stackoverflow.com/a/3930606
