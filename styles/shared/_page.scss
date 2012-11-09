@@ -75,4 +75,9 @@
       margin-right: $gutter-width;
     }
   }
+
+  #github
+  {
+    @include github-badge;
+  }
 }

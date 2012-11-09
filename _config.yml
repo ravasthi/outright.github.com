@@ -1,6 +1,5 @@
 markdown: rdiscount
 pygments: true
-exclude: [README.md, CNAME, Gemfile, Gemfile.lock]
 paginate: 15
 permalink: "/:title"
 
@@ -14,7 +13,7 @@ facebook_colorscheme: light
 
 ga_code: UA-88530-22
 
-author_ids: [bcurren, trobrock]
+author_ids: [bcurren, trobrock, ravasthi]
 authors:
   bcurren:
     display_name: Ben Curren
@@ -44,7 +43,7 @@ server: true
 server_port: 4000
 
 # Excludes
-exclude: ["bin", "styles", "Gemfile", "Gemfile.lock", "Guardfile", "Vendorfile"]
+exclude: [bin, styles, CNAME, Gemfile, Gemfile.lock, Guardfile, README.md, Vendorfile]
 
 # # Calculate gravatar hash from email address
 # def calc_gravatar(email)
