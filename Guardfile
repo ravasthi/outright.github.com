@@ -10,5 +10,6 @@ guard 'livereload' do
 end
 
 guard 'compass' do
+  ignore(%r{_site/}, %r{public/})
   watch(%r{styles/.*\.scss})
 end
