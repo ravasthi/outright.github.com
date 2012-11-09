@@ -5,11 +5,10 @@ use Rack::LiveReload, :min_delay => 500
 
 # A simple Rack app that serves the site, so we can use POW against it.
 # Taken from http://stackoverflow.com/a/3930606
-# TODO: consolidate with the version in spec_helper.rb
 #
 run Proc.new { |env|
   # Root directory of the site
-  root = File.dirname(__FILE__)
+  root = File.join(File.dirname(__FILE__), "_site")
 
   # Extract the requested path from the request
   path = Rack::Utils.unescape(env['PATH_INFO'])

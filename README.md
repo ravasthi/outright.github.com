@@ -7,6 +7,9 @@
 
 ## Running locally with Pow
 
-* Create a link using powder: `powder link outright-dev-blog.dev`
-* Create a symlink to the public directory: `ln -s _site public`
+* Create a link using powder: `powder link outright-dev-blog`
+* Open in a browser: `powder open`
 
+## Use Guard to automatically regenerate the site and styles on changes
+
+Type `bundle exec guard` from the project root directory.

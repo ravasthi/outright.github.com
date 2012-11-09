@@ -1,3 +1,8 @@
 /*-----[ footer ]---------------------------------------------------------------
 | Common page footer styles.
 */
+footer.global
+{
+  @include secondary-text;
+  color: $secondary-text-color;
+}
