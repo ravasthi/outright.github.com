@@ -30,6 +30,13 @@ authors:
     web: http://trobrock.com
     twitter: trobrock
     github: trobrock
+  ravasthi:
+    display_name: Richa Avasthi
+    gravatar: b13527b475f29568229f083c5a3cb2ce
+    email: richa@outright.com
+    web: http://richa.avasthi.name
+    twitter: ravasthi
+    github: ravasthi
 
 # Local server
 auto: true
