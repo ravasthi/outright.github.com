@@ -20,7 +20,7 @@ title: Latest Articles
         <p><img class="avatar thumbnail" href="{{ author.display_name }}" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" width="40" height="40"></p>
         <p class="post-date">{{ post.date | date_to_string }}</p>
         <p class="byline">by <span class="author">{{ author.display_name }}</span></p>
-        <p><a class="comments" href="{{ post.url }}#comments_thread"><fb:comments-count href="{{ site.base_url }}{{ post.url }}"></fb:comments-count> Comments</a></p>
+        <p><a class="comments" href="{{ post.url }}#comments_thread"><fb:comments-count href="{{ site.base_url }}{{ post.url }}"></fb:comments-count> comments</a></p>
       </aside> <!-- /.meta -->
     </article> <!-- /.post -->
     {% endfor %}
@@ -30,11 +30,11 @@ title: Latest Articles
       {% if paginator.previous_page == 1 %}
         <a class="prev" href="/#posts">&laquo; Newer Posts</a>
       {% else %}
-        <a class="prev" href="/page{{ paginator.previous_page }}#posts">&laquo; Newer Posts</a>
+        <a class="prev" href="/page{{ paginator.previous_page }}#posts">&laquo; Newer posts</a>
       {% endif %}
     {% endif %}
     {% if paginator.next_page %}
-      <a class="next" href="/page{{ paginator.next_page }}#posts">Older Posts &raquo;</a>
+      <a class="next" href="/page{{ paginator.next_page }}#posts">Older posts &raquo;</a>
     {% endif %}
   </div>
 </div> <!-- /#content -->
