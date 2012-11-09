@@ -11,7 +11,7 @@ header.global
     margin-right: $column-width;
     width: 87px;
     height: $body-text-line-height;
-    background: image-url("logo.png") no-repeat left middle;
+    background: image-url("logo.png") no-repeat left center;
 
     @media only screen and (-webkit-min-device-pixel-ratio: 2)
     {
