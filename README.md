@@ -1,7 +1,7 @@
 ## New Authors
 
 * Add your info to _config.yml
-* Create new post by typing `bin/create_post "my post title"`
+* Create new post by typing `rake post:create["my post title"]`
 * Write post
 * Update author: key to post meta data
 
