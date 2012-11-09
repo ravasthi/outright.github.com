@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "rake"
+
 # jekyll
 gem "jekyll"
 gem "guard-jekyll"
