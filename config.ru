@@ -9,7 +9,7 @@ use Rack::LiveReload, :min_delay => 500
 #
 run Proc.new { |env|
   # Root directory of the site
-  root = File.dirname(__FILE__)
+  root = File.expand_path("_site", File.dirname(__FILE__))
 
   # Extract the requested path from the request
   path = Rack::Utils.unescape(env['PATH_INFO'])

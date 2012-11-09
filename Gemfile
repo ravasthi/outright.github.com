@@ -11,7 +11,6 @@ gem "stringex"
 # compass
 gem "compass", ">= 0.12"
 gem "github-badge"
-gem 'guard-compass'
 gem "rb-fsevent"
 gem "sassy-buttons"
 gem "sass"
